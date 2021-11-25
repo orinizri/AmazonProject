@@ -1,8 +1,25 @@
 @font-face {
-    font-family: amazon;
-    src: url(/assets/fonts/Amazon\ Ember.ttf);
+  font-family: amazon;
+  src: url(/assets/fonts/Amazon\Ember.ttf);
 }
-p {
-    font-family: amazon;
-    font-size: 24px;
+:root {
+  --nav-one-color: #131921;
+  --nav-two-color: #232f3e;
+  --amazon-orange: #ff9900;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.nav.one {
+  max-height: 100px;
 }
