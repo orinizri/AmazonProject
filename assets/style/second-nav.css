@@ -1,0 +1,53 @@
+.nav.two {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid red;
+    background-color: var(--nav-two-color);
+    height: 35px;
+    font-size: 12px;
+}
+.nav.two div {
+    padding: 7px 5px;
+    border: 1px solid transparent;
+    line-height: 0.5rem;
+}
+.all {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid transparent;
+    margin-left: 10px;
+}
+.nav.two div:hover,
+.all:hover {
+    border: 1px solid white;
+
+}
+.all span{
+    display: flex;
+    flex-direction: column;
+}
+.hamburger span {
+    height: 5px;
+    width: 13px;
+    border-bottom: 2px solid white;
+    margin: 0px 3px;
+}
+.text-all {
+    font-size: 12px;
+    margin-left: 2px;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+.orange-banner {
+    border: 1px solid red;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    color:black;
+    width: 50%;
+    margin: auto;
+}
+/* .black-friday {
+
+} */
