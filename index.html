@@ -22,7 +22,7 @@
         </div>
         <div class="search">
             <select name="select" id="">
-                <option value="volvo">All</option>
+                <option value="All">All</option>
             </select>
             <input type="text">
             <button><div class="search-btn"></div></button>
@@ -194,8 +194,10 @@
                 <h4>In-Stock.</h4>
             </div>
             <div class="quantity">
-                <select name="quantity" id="quantity">
-                    <option value="Qty-1">Qty: 1</option>
+                <select name="quantity" id="">
+                    <option selected="selected" value="1">Qty: 1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                 </select>
             </div>
             <div class="buttons">
@@ -266,8 +268,14 @@
 </main>
 <footer>
     <div class="carousel">
-        <p>carousel</p>
+        <div class="item-1">
+            <div id="name">1</div>
+            <div class="i2">2</div>
+            <div class="i3">3</div>
+            <div class="i4">4</div>
+        </div>
     </div>
 </footer>
+<script src="/assets/scripts/script.js"></script>
 </body>
 </html>
