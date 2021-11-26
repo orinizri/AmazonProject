@@ -5,6 +5,7 @@
     background-color: var(--nav-two-color);
     height: 40px;
     font-size: 14px;
+    color: white;
 }
 .nav.two div {
     padding: 7px 10px;

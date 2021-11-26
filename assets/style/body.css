@@ -1,50 +1,339 @@
-.tree {
-    margin: 5px;
-    color:black;
-    font-size: 12px;
-} 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-evenly;
+:root {
+    --links-color: #007185;
+    --links-color-hover: #C7511F;
+    --price-color: #B12704;
+    --gray-color: #565959;
 }
+
+.tree {
+    margin: 10px;
+    color: black;
+    font-size: 12px;
+}
+
+main {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
 .left-body {
-    color:black;
+    top: 4px;
+    color: black;
     border: 1px solid red;
     position: relative;
+    margin-left: 30px;
 }
-.main-pic {
-    border: 1px solid red;
-    
+
+.main-pics {
+    /* border: 1px solid red; */
+    position: sticky !important;
+    top: 0;
+
 }
+
 .middle-body {
-    color:black;
+    color: black;
     border: 1px solid blue;
+    padding-right: 15px;
+    margin-top: 3px;
 }
+
 .right-body {
-    color:black;
+    color: black;
     border: 1px solid springgreen;
 }
+
 .lil-pics {
     display: flex;
     border: 1px solid darkblue;
     justify-content: center;
-    overflow: hidden;
-    
 }
+
 .lil-pic {
     border: 1px solid darkgrey;
     margin: 5px 2px;
 }
+
 .lil-pic:hover {
     box-shadow: var(--amazon-orange) 0px 5px 5px;
 }
+
 .lil-pic.i2:hover::after {
     position: absolute;
-    content:url(/assets/images/);
-    top:0;
-    left:0;
+    content: url(/assets/images/);
+    top: 0;
+    left: 0;
     height: 50px;
     width: 50px;
     border: 1px solid black;
+}
+
+.mid-top-container {
+    color: black;
+}
+
+.mid-top-container h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.mid-top-container a,
+.mid-middle-container a,
+.mid-bottom-container a {
+    color: var(--links-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.mid-top-container a:hover,
+.mid-middle-container a:hover,
+.mid-bottom-container a:hover {
+    color: var(--links-color-hover);
+    text-decoration: underline;
+}
+
+.amazon-choice {
+    display: flex;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle-table {
+    text-indent: initial;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.middle-table td {
+    padding: 3px;
+}
+
+td.left {
+    font-weight: bold;
+    width: 33%;
+}
+
+td.right {
+    vertical-align: top;
+}
+
+.about-this-item {
+    margin-left: 18px;
+}
+
+.about-this-item p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.about-this-item ul {
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.right-body {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.inner-right {
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.details a,
+.secure-transaction a,
+.return-policy a,
+.accessory-title a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--links-color);
+}
+
+.location a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--links-color);
+}
+
+.details a:hover,
+.secure-transaction a:hover,
+.return-policy a:hover,
+.location a:hover {
+    color: var(--links-color-hover);
+}
+.accessory-title a:hover {
+    color: var(--links-color-hover);
+    text-decoration: underline;
+}
+
+.right-price h3 {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--price-color);
+    font-weight: 500;
+}
+
+.fees-right p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gray-color);
+    font-weight: 400;
+}
+
+.fees-right span {
+    font-weight: bold;
+}
+
+.shipping-time h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.shipping-time span {
+    font-weight: bold;
+}
+
+.in-stock h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #187600;
+}
+
+.quantity select {
+    margin-top: 12px;
+    border-radius: 7px;
+    background: #F0F2F2;
+    box-shadow: 0 2px 5px rgb(15 17 17 / 15%);
+    height: 22px;
+    width: 60px;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+    border: 0.4px solid rgb(201, 200, 200);
+}
+.quantity select:hover {
+    background: #dedfdf;
+}
+.buttons {
+    margin-top: 10px;
+}
+.buttons button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    height: 29px;
+}
+.add-cart {
+    background-color: #FFD814;
+    margin-bottom: 7px;
+    text-align: center;
+}
+.add-cart:hover {
+    background-color: #F7CA00;
+}
+.remove-cart {
+    background-color: #FF8F00;
+    margin-bottom: 12px;
+}
+.remove-cart:hover {
+    background-color: #FA8900;
+}
+
+.security {
+    display: flex;
+}
+.ships-from-to {
+    font-size: 12px;
+    margin: 10px;
+    line-height: 20px;
+}
+.ships-from-to .title {
+    color: var(--gray-color);
+    width: 50%;
+}
+.return-policy {
+    line-height: 20px;
+}
+.add-accessory p {
+    margin: 5px;
+    font-weight: bold;
+}
+.accessory {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(218, 216, 216);
+}
+.accessory-item {
+    margin-left: 5px;
+}
+.accessory-price {
+    color: var(--price-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.add-to-list select {
+    font-size: 13px;
+    width:100%;
+    height: 30px;
+    background-color:rgb(236, 236, 236);
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.share {
+    display: flex;
+    margin-top: 10px;
+}
+.share a {
+    text-decoration: none;
+    color: var(--links-color);
+    font-size: 13px;
+}
+.have-sell {
+    margin-top: 12px;
+    font-size: 12px;
+    margin: 3px;
+    text-align: center;
+}
+
+.share div {
+    margin-left: 5px;
+}
+.sell button {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 0px 10px;
+    background-color:white;
+    border: 1px solid #D5D9D9;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.sell button:hover {
+    background-color:#F7FAFA;
 }
