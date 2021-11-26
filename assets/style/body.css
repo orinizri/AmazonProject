@@ -1,3 +1,50 @@
+.tree {
+    margin: 5px;
+    color:black;
+    font-size: 12px;
+} 
 main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+.left-body {
+    color:black;
+    border: 1px solid red;
+    position: relative;
+}
+.main-pic {
+    border: 1px solid red;
+    
+}
+.middle-body {
+    color:black;
+    border: 1px solid blue;
+}
+.right-body {
+    color:black;
+    border: 1px solid springgreen;
+}
+.lil-pics {
     display: flex;
+    border: 1px solid darkblue;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.lil-pic {
+    border: 1px solid darkgrey;
+    margin: 5px 2px;
+}
+.lil-pic:hover {
+    box-shadow: var(--amazon-orange) 0px 5px 5px;
+}
+.lil-pic.i2:hover::after {
+    position: absolute;
+    content:url(/assets/images/);
+    top:0;
+    left:0;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
 }

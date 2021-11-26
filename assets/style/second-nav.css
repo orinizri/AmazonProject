@@ -2,13 +2,12 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    border: 1px solid red;
     background-color: var(--nav-two-color);
-    height: 35px;
-    font-size: 12px;
+    height: 40px;
+    font-size: 14px;
 }
 .nav.two div {
-    padding: 7px 5px;
+    padding: 7px 10px;
     border: 1px solid transparent;
     line-height: 0.5rem;
 }
@@ -34,20 +33,21 @@
     margin: 0px 3px;
 }
 .text-all {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 2px;
     line-height: 1.2rem;
     font-weight: 600;
 }
 .orange-banner {
-    border: 1px solid red;
+    background-repeat: no-repeat;
     display: flex;
     position: sticky;
     justify-content: center;
-    color:black;
-    width: 50%;
-    margin: auto;
+    object-fit: contain;
+    height: max-content;
 }
-/* .black-friday {
-
-} */
+.black-friday {
+    position: absolute;
+    right: 10px;
+    font-weight: 700;
+}
