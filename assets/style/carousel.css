@@ -1,14 +1,14 @@
 .carousel {
     margin-top: 20px;
     display: flex;
-    width: 95%;
-    margin: auto;
+    /* border: 1px solid black; */
+    justify-content: center;
 }
 .items {
     display: block;
     width: 160px;
-    height: ;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    margin: 10px;
 }
 .products-related {
     display: flex;
@@ -18,7 +18,7 @@
 }
 .pages {
     position: absolute;
-    right: 0px;
+    right: 20px;
 }
 a {
     text-decoration: none;
@@ -26,4 +26,36 @@ a {
 }
 .name a:hover {
     text-decoration: underline;
+    color: var(--links-color-hover)
+}
+.buttons-carousel {
+    /* border:1px solid blue; */
+    display: flex;
+    align-items: center;
+}
+.buttons-carousel button {
+    width:30px;
+    height: 30px;
+    position: relative;
+    margin: 5px;
+    cursor: pointer;
+}
+button .previous-items {
+    position: absolute;
+    background: url('/assets/images/socialSprite.png') -123px -7px;
+    background-size: 400px 900px;
+    width: 11px;
+    height: 15px;
+    top:5px;
+    left:7px;
+    
+}
+button .more-items {
+    position: absolute;
+    background: url('/assets/images/socialSprite.png') -105px -7px;
+    background-size: 400px 900px;
+    width: 11px;
+    height: 15px;
+    top:5px;
+    left:7px;
 }
