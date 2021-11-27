@@ -7,7 +7,7 @@
 .tree {
     margin: 10px;
     color: black;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 main {
     position: relative;
@@ -54,7 +54,7 @@ main {
 }
 .mid-top-container h1 {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 32px;
 }
 .mid-top-container a,
@@ -62,7 +62,7 @@ main {
 .mid-bottom-container a {
     color: var(--links-color);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
 }
 .mid-top-container a:hover,
@@ -80,7 +80,7 @@ main {
 }
 .middle-table {
     text-indent: initial;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     width: 100%;
 }
@@ -98,21 +98,21 @@ td.right {
     margin-left: 18px;
 }
 .about-this-item p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     font-weight: 700;
 }
 .about-this-item ul {
     font-weight: 400;
     line-height: 20px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .right-body {
     margin-top: 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .inner-right {
     width: 80%;
@@ -124,12 +124,12 @@ td.right {
 .secure-transaction a,
 .return-policy a,
 .accessory-title a {
-    font-size: 14px;
+    font-size: 0.875rem;
     text-decoration: none;
     color: var(--links-color);
 }
 .location a {
-    font-size: 12px;
+    font-size: 0.875rem;
     text-decoration: none;
     color: var(--links-color);
 }
@@ -144,13 +144,13 @@ td.right {
     text-decoration: underline;
 }
 .right-price h3 {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 24px;
     color: var(--price-color);
     font-weight: 500;
 }
 .fees-right p {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     color: var(--gray-color);
     font-weight: 400;
@@ -159,7 +159,7 @@ td.right {
     font-weight: bold;
 }
 .shipping-time h4 {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     margin-bottom: 12px;
 }
@@ -167,7 +167,7 @@ td.right {
     font-weight: bold;
 }
 .in-stock h4 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     color: #187600;
 }
@@ -178,7 +178,7 @@ td.right {
     box-shadow: 0 2px 5px rgb(15 17 17 / 15%);
     height: 22px;
     width: 60px;
-    font-size: 11px;
+    font-size: 0.75rem;
     text-align: center;
     cursor: pointer;
     border: 0.4px solid rgb(201, 200, 200);
@@ -194,7 +194,7 @@ td.right {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 0.875rem;
     border-radius: 20px;
     border: none;
     width: 100%;
@@ -224,7 +224,7 @@ td.right {
     margin-right: 12px;
 }
 .ships-from-to {
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 10px;
     line-height: 20px;
 }
@@ -249,12 +249,12 @@ td.right {
 }
 .accessory-price {
     color: var(--price-color);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     margin-bottom: 5px;
 }
 .add-to-list select {
-    font-size: 13px;
+    font-size: 0.875rem;
     width:100%;
     height: 30px;
     background-color:rgb(236, 236, 236);
@@ -270,11 +270,11 @@ td.right {
 .share a {
     text-decoration: none;
     color: var(--links-color);
-    font-size: 13px;
+    font-size: 0.875rem;
 }
 .have-sell {
     margin-top: 12px;
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 3px;
     text-align: center;
 }
@@ -306,7 +306,7 @@ div .pinterest {
     width: 18px;
 }
 .sell button {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 28px;
     padding: 0px 10px;
     background-color:white;

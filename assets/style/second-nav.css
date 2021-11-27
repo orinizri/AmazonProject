@@ -4,7 +4,7 @@
     align-items: center;
     background-color: var(--nav-two-color);
     height: 40px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: white;
 }
 .nav.two div {
@@ -34,7 +34,7 @@
     margin: 0px 3px;
 }
 .text-all {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-left: 2px;
     line-height: 1.2rem;
     font-weight: 600;
