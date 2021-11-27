@@ -6,17 +6,20 @@
     height: 40px;
     font-size: 0.875rem;
     color: white;
+    width:100%;
 }
 .nav.two div {
     padding: 7px 10px;
     border: 1px solid transparent;
     line-height: 0.5rem;
+    cursor: pointer;
 }
 .all {
     display: flex;
     flex-direction: row;
     border: 1px solid transparent;
     margin-left: 10px;
+    cursor: pointer;
 }
 .nav.two div:hover,
 .all:hover {
@@ -46,6 +49,7 @@
     justify-content: center;
     object-fit: contain;
     height: max-content;
+    cursor: pointer;
 }
 .black-friday {
     position: absolute;

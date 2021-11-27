@@ -3,11 +3,11 @@
     display: flex;
     /* border: 1px solid black; */
     justify-content: center;
+    max-width:100%;
 }
 .items {
     display: block;
     width: 160px;
-    /* border: 1px solid blue; */
     margin: 10px;
 }
 .products-related {
@@ -42,26 +42,22 @@ a {
     border-radius: 7px;
     border: 1px solid gray;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .buttons-carousel button:hover {
     background-color: rgb(219, 219, 219);
 }
 button .previous-items {
-    position: absolute;
     background: url('/assets/images/socialSprite.png') -123px -7px;
     background-size: 400px 900px;
     width: 11px;
     height: 15px;
-    top:9px;
-    left:9px;
-    
 }
 button .more-items {
-    position: absolute;
     background: url('/assets/images/socialSprite.png') -105px -7px;
     background-size: 400px 900px;
     width: 11px;
     height: 15px;
-    top:9px;
-    right:9px;
 }

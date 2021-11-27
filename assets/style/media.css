@@ -1,2 +1,82 @@
 
 
+
+
+@media (max-width: 415px) {
+    .search input {
+        width:50px;
+    }
+    .search select {
+        width: 20px;
+    }
+    .search button div {
+        background: url("/assets/images/sprite.png") -8px -282px;
+        width: 25px;
+    }
+    .search button {
+        width: 25px;
+    }
+    .language-container {
+        min-width: 24px;
+    }
+    .cart {
+        padding:0;
+        flex-direction: column;
+    }
+    .cart p {
+        align-self: center;
+    }
+    .nav.two {
+        overflow: scroll;
+    }
+    .nav.two div {
+        font-size: 0.75rem;
+        padding: 0;
+        line-height: 0.5rem;
+    }
+    .all {
+        margin:0;
+        font-weight: 400;
+    }
+    .black-friday {
+        position: unset;
+        font-weight: 500;
+    }
+    img {
+        width: 50%;
+    }
+    .items {
+        margin:0;
+        overflow: hidden;
+    }
+    .item-1,
+    .item-2 {
+        display: none;
+    }
+    .buttons-carousel button {
+        margin: 0px;
+        width:20px;
+    }
+    .bottons-carousel {
+        overflow: scroll;
+    }
+    .main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .left-body,
+    .middle-body,
+    .right-body {
+        margin:0;
+        padding:0;
+    }
+    .inner-right {
+        padding: 10px;
+    }
+    .buttons button {
+        font-size: 0.65rem;
+    }
+    .add-to-list select {
+        font-size: 0.75rem;
+        padding:0;
+    }
+}
