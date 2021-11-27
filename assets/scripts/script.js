@@ -34,25 +34,40 @@ const Item10 = new Items("\\assets\\images\\HelloIMG1637838564333.jpeg", "BENTOP
 const Item11 = new Items("\\assets\\images\\HelloIMG1637838564333.jpeg", "BENTOPAL Laser Cat Toys for Indoor Cats/Dogs, Interactive Cat Toys with Motion...", 4.5, "\(979\)", '$99.99');
 const Item12 = new Items("\\assets\\images\\HelloIMG1637838564333.jpeg", "BENTOPAL Laser Cat Toys for Indoor Cats/Dogs, Interactive Cat Toys with Motion...", 4.5, "\(979\)", '$99.99');
 
-// console.log(Item1);
-// console.log(Items)
 
 const names = document.querySelectorAll(".name a")
 const items_location = document.querySelectorAll(".items")
-console.log(items_location[0].children)
-let itemInstances = [Item1, Item2, Item3, Item4, Item5, Item6];
 
-//console.log(Items)
-function insertAll(location, items) {
-    for (let i=0 ; i<location.length ; i++) {
-        items_location[i].children[0].firstElementChild.src = itemInstances[i].image
+let itemInstances = [Item1, Item2, Item3, Item4, Item5, Item6,Item7, Item8, Item9, Item10, Item11, Item12];
 
-        items_location[i].children[1].lastChild.innerHTML = itemInstances[i].name;
-        items_location[i].children[2].firstElementChild.innerText = itemInstances[i].rating;
-        items_location[i].children[2].lastElementChild.innerText = itemInstances[i].feedbackNum;
-        items_location[i].children[3].innerText = itemInstances[i].price;
+function insertAll(location, items, index) {
+    for (let i=index, j=0 ; j<location.length ; i++, j++) {
+        items_location[j].children[0].firstElementChild.src = itemInstances[i].image
+        items_location[j].children[1].lastChild.innerHTML = itemInstances[i].name;
+        items_location[j].children[2].firstElementChild.innerText = itemInstances[i].rating;
+        items_location[j].children[2].lastElementChild.innerText = itemInstances[i].feedbackNum;
+        items_location[j].children[3].innerText = itemInstances[i].price;
     }
+    return index;
 }
-insertAll(items_location, itemInstances);
+let index = 0;
+insertAll(items_location, itemInstances,index);
 
-console.log(itemInstances[0])
+let MoreItemsBtn = document.querySelector(".more-items");
+MoreItemsBtn.addEventListener("click", function() {
+    console.log("click");
+    index += 6;
+    console.log(index);
+    insertAll(items_location, itemInstances, index);
+    console.log("arrived");
+    return index;
+})
+
+let PreviousItemsBtn = document.querySelector(".previous-items");
+PreviousItemsBtn.addEventListener("click", function() {
+    console.log("click");
+    index -= 6;
+    console.log(index);
+    insertAll(items_location, itemInstances, index);
+    console.log("arrived");
+})

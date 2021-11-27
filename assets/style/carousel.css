@@ -35,10 +35,16 @@ a {
 }
 .buttons-carousel button {
     width:30px;
-    height: 30px;
+    height: 35px;
     position: relative;
     margin: 5px;
     cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid gray;
+    background-color: white;
+}
+.buttons-carousel button:hover {
+    background-color: rgb(219, 219, 219);
 }
 button .previous-items {
     position: absolute;
@@ -46,8 +52,8 @@ button .previous-items {
     background-size: 400px 900px;
     width: 11px;
     height: 15px;
-    top:5px;
-    left:7px;
+    top:9px;
+    left:9px;
     
 }
 button .more-items {
@@ -56,6 +62,6 @@ button .more-items {
     background-size: 400px 900px;
     width: 11px;
     height: 15px;
-    top:5px;
-    left:7px;
+    top:9px;
+    right:9px;
 }
