@@ -21,6 +21,8 @@ main {
     color: black;
     position: relative;
     margin-left: 30px;
+    margin-bottom: 50px;
+    
 }
 .main-pics {
     /* border: 1px solid red; */
@@ -31,6 +33,7 @@ main {
     color: black;
     padding-right: 15px;
     margin-top: 3px;
+    margin-bottom: 50px;
 }
 .right-body {
     color: black;

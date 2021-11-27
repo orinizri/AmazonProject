@@ -2,7 +2,6 @@ let test = document.querySelector(".cart-count"); // default textCeontent is 0
 const addCartButton = document.querySelector(".add-cart");
 const removeCartButton = document.querySelector(".remove-cart");
 const quantity = document.querySelector(".quantity select");
-//console.log(quantity);
 
 addCartButton.addEventListener ('click' , () => {
     test.textContent = parseInt(test.textContent) + parseInt(quantity.value);
