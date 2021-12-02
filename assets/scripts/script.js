@@ -1,14 +1,14 @@
-let test = document.querySelector(".cart-count"); // Default textCeontent is 0
+let cartCounter = document.querySelector(".cart-count"); // Default textCeontent is 0
 const addCartButton = document.querySelector(".add-cart");
 const removeCartButton = document.querySelector(".remove-cart");
 const quantityButton = document.querySelector(".quantity select");
 
 // Bonus! Use the Quantity button to add also 2 and 3 to the cart
 addCartButton.addEventListener('click', () => {
-    test.textContent = parseInt(test.textContent) + parseInt(quantityButton.value);
+    cartCounter.textContent = parseInt(cartCounter.textContent) + parseInt(quantityButton.value);
 })
 removeCartButton.addEventListener('click', () => {
-    test.textContent = parseInt(test.textContent) - parseInt(quantityButton.value);
+    cartCounter.textContent = parseInt(cartCounter.textContent) - parseInt(quantityButton.value);
 })
 
 // Building objects through class
