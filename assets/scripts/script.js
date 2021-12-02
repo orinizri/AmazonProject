@@ -1,4 +1,4 @@
-let cartCounter = document.querySelector(".cart-count"); // Default textCeontent is 0
+const cartCounter = document.querySelector(".cart-count"); // Default textCeontent is 0
 const addCartButton = document.querySelector(".add-cart");
 const removeCartButton = document.querySelector(".remove-cart");
 const quantityButton = document.querySelector(".quantity select");
@@ -37,8 +37,8 @@ const Item12 = new Items("\\assets\\images\\HelloIMG1637838564333.jpeg", "BENTOP
 
 // Location of the items in the html document
 const items_location = document.querySelectorAll(".items")
-// Construction of items in array for looping (I would add it into the constractor if I had more time)
-let itemInstances = [Item1, Item2, Item3, Item4, Item5, Item6,Item7, Item8, Item9, Item10, Item11, Item12];
+// Construction of items in array for looping //todo I would add it into the constractor if I had more time
+const itemInstances = [Item1, Item2, Item3, Item4, Item5, Item6,Item7, Item8, Item9, Item10, Item11, Item12];
 // A Function that assigns the items to the HTML using html_location, items array and index
 function insertAll(location, items, index) {
     for (let i=index, j=0 ; j<location.length ; i++, j++) {
