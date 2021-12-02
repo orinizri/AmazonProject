@@ -1,7 +1,6 @@
 .carousel {
     margin-top: 20px;
     display: flex;
-    /* border: 1px solid black; */
     justify-content: center;
     max-width:100%;
 }
